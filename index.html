@@ -8,6 +8,115 @@
     <title>Checkout Page</title>
 </head>
 <body>
+    <main>
+        <section class="checkout">
+            <h1>Checkout</h1>
+        </section>
+        <div class="shopping-cart">
+            <div class="list-articles">
+                <div class="article">
+                    <div class="article-image">
+                        <img src="images/photo1.png" alt="backbag">
+                    </div>
+                    <div class="article-info">
+                        <p class="article-name">Vintage Backbag</p>
+                        <div class="article-price">
+                            <p class="article-price-offer">$54.99</p>
+                            <p class="article-price-normal">$94.99</p>
+                        </div>
+                        <div class="article-quantity">
+                            <button class="button-quantity"> - </button>
+                            <p class="number-quantity"> 1 </p>
+                            <button class="button-quantity"> + </button>
+                        </div>
+                    </div>
+                </div>
     
+                <div class="article">
+                    <div class="article-image">
+                        <img src="images/photo2.png" alt="shoes">
+                    </div>
+                    <div class="article-info">
+                        <p class="article-name">Levi Shoes</p>
+                        <div class="article-price">
+                            <p class="article-price-offer">$74.99</p>
+                            <p class="article-price-normal">$124.99</p>
+                        </div>
+                        <div class="article-quantity">
+                            <button class="button-quantity"> - </button>
+                            <p class="number-quantity"> 1 </p>
+                            <button class="button-quantity"> + </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-price">
+                <div class="price-shipping">
+                    <p class="price-text">Shipping</p>
+                    <p class="price-quantity">$19</p>
+                </div>
+                <div class="price-total">
+                    <p class="price-text">Total</p>
+                    <p class="price-quantity">$148.98</p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="contact-info">
+                    <p class="subtitle">Contact Information </p>
+                    <div class="contact-label">
+                        <label for="email" class="info-input">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+    
+                        <label for="phone" class="info-input">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
+                    </div>
+                </div>
+                <div class="shipping-info">
+                    <p class="subtitle">Shipping adress</p>
+                    <div class="shipping-label">
+                        <label for="name">Full name</label>
+                        <input type="text" name="name" id="name" placeholder="Rodney Cotton">
+
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Your address">
+
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="Your city">
+
+                        <div class="country-postal">
+                            <div class="country">
+                                <label for="country">Country</label>
+                                <select name="country" id="country">
+                                    <option value="United States">United States</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                            </div>
+                            <div class="postal">
+                                <label for="postal">Postal Code</label>
+                                <input type="text" name="postal code" id="postal" pattern="[0-9]{5}" placeholder="Your postal code">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="check">
+                    <input class="box-check" type="checkbox" name="check" id="check">
+                    <label for="check">Save this information for next time</label>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="button-submit">Continue</button>
+                </div>                
+            </form>
+            
+        </div>
+    </main>
 </body>
 </html>
